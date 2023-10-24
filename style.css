@@ -77,7 +77,7 @@ button {
 
 .brands {
     background: rgb(44, 43, 43);
-    overflow: hidden;
+    overflow: auto;
     white-space: nowrap;
     padding: 15px;
     display: flex;
