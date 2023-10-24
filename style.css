@@ -46,6 +46,7 @@ header {
     width: 115px;
     height: 115px;
     border-radius: 50%;
+    mix-blend-mode: luminosity;
 }
 
 .profile span {
@@ -75,21 +76,59 @@ button {
 /* brands .............. */
 
 .brands {
-    background-color: rgb(44, 43, 43);
+    background: rgb(44, 43, 43);
     overflow: hidden;
-    /* white-space: nowrap; */
-    padding: 10px;
+    white-space: nowrap;
+    padding: 15px;
     display: flex;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 .brands div {
     width: 100px;
     height: 100px;
+    margin: 0 40px;
 }
 
 .brands img {
     width: 100px;
     height: 100px;
+    /* object-fit: cover; */
+    mix-blend-mode: luminosity;
+    /* -webkit-filter: grayscale(100%); */
+    filter: contrast(79%);
+}
+
+.brands .brand1 img {
+    width: 180px;
+}
+
+.brands .brand6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(44, 43, 43);
+}
+
+.brands .brand6 img {
+    width: 160px;
+    height: fit-content;
+}
+
+.brands .brandp p {
+    color: aliceblue;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    display: flex;
+    background: rgb(44, 43, 43);
+    font-size: 1.7rem;
 }
 
 
@@ -115,10 +154,6 @@ button {
 
 @media (min-width:768px) {
 
-    header {
-        display: flex;
-    }
-
     .profile h1 {
         font-size: 3rem;
         margin: 25px auto 20px;
@@ -135,7 +170,7 @@ button {
 @media (min-width:450px) {
 
     header {
-        display: flex;
+        display: none;
     }
 
     .profile h1 {
