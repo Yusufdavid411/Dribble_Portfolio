@@ -77,7 +77,7 @@ button {
 
 .brands {
     background: rgb(44, 43, 43);
-    overflow: auto;
+    overflow: hidden;
     white-space: nowrap;
     padding: 15px;
     display: flex;
@@ -132,8 +132,19 @@ button {
 }
 
 
+.bx {
+    /* color: rgb(49, 49, 49); */
+}
 
+.collaboration .agencies {
+    display: flex;
+}
 
+.agencies div {
+    padding: 50px 10px 15px;
+    background: rgb(44, 43, 43);
+    margin: 10px;
+}
 
 
 
