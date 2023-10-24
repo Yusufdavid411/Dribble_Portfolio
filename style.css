@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    background: rgb(20, 20, 20);
+}
+
+.container {
+    width: 100%;
+}
+
+header {
+    display: none;
+    justify-content: space-between;
+    margin: 2.5% 10%;
+}
+
+.brand_logo {
+    color: aliceblue;
+    font-size: 1rem;
+}
+
+.socialLink a {
+    text-decoration: none;
+    color: aliceblue;
+    margin: 0 5px;
+}
+
+
+
+/* Profile ................. */
+
+.profile {
+    justify-content: center;
+    align-items: center;
+    max-width: 450px;
+    margin: 100px auto;
+    text-align: center;
+    color: aliceblue;
+}
+
+.profile .img {
+    margin: 10px auto 15px;
+}
+
+.profile .img img {
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+}
+
+.profile span {
+    font-size: .8rem;
+    word-spacing: .1rem;
+    letter-spacing: .1rem;
+}
+
+.profile h1 {
+    margin: 25px auto 20px;
+}
+
+button {
+    color: aliceblue;
+    padding: 10px 25px;
+    margin: 10px auto;
+    font-size: .8rem;
+    word-spacing: .1rem;
+    letter-spacing: .1rem;
+    background: rgb(44, 43, 43);
+    border-width: 2px;
+    border-color: rgb(182, 181, 181);
+}
+
+
+
+/* brands .............. */
+
+.brands {
+    background-color: rgb(44, 43, 43);
+    overflow: hidden;
+    /* white-space: nowrap; */
+    padding: 10px;
+    display: flex;
+}
+
+.brands div {
+    width: 100px;
+    height: 100px;
+}
+
+.brands img {
+    width: 100px;
+    height: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Tablet size ............. */
+
+@media (min-width:768px) {
+
+    header {
+        display: flex;
+    }
+
+    .profile h1 {
+        font-size: 3rem;
+        margin: 25px auto 20px;
+    }
+}
+
+
+
+
+
+
+/* Laptop size ............. */
+
+@media (min-width:450px) {
+
+    header {
+        display: flex;
+    }
+
+    .profile h1 {
+        font-size: 3rem;
+        margin: 25px auto 20px;
+    }
+}
+
+
+
+
