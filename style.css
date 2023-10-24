@@ -102,8 +102,12 @@ button {
     filter: contrast(79%);
 }
 
+.brands .brand1 {
+    margin: 0 70px 0 0;
+}
+
 .brands .brand1 img {
-    width: 180px;
+    width: 170px;
 }
 
 .brands .brand6 {
@@ -132,18 +136,46 @@ button {
 }
 
 
-.bx {
-    /* color: rgb(49, 49, 49); */
+/* collaboration ............. */
+
+
+.collaboration h1 {
+    color: aliceblue;
+    text-align: center;
+    margin: 80px auto 40px;
+    font-size: 2rem;
+    max-width: 550px;
 }
 
 .collaboration .agencies {
     display: flex;
+    margin: 0 auto;
+    justify-content: center;
 }
 
-.agencies div {
-    padding: 50px 10px 15px;
+.agencies .works {
+    padding: 100px 10px 15px;
     background: rgb(44, 43, 43);
     margin: 10px;
+    width: 120px;
+}
+
+.agencies div,
+.bx {
+    color: rgb(123, 120, 120);
+    background: rgb(44, 43, 43);
+}
+
+.agencies h6 {
+    background: rgb(44, 43, 43);
+    font-size: .8rem;
+    margin: 4px 0 7px;
+}
+
+.agencies p {
+    background: rgb(44, 43, 43);
+    font-size: .7rem;
+    max-width: 100px;
 }
 
 
@@ -165,6 +197,10 @@ button {
 
 @media (min-width:768px) {
 
+    header {
+        display: flex;
+    }
+
     .profile h1 {
         font-size: 3rem;
         margin: 25px auto 20px;
@@ -179,10 +215,6 @@ button {
 /* Laptop size ............. */
 
 @media (min-width:450px) {
-
-    header {
-        display: none;
-    }
 
     .profile h1 {
         font-size: 3rem;
