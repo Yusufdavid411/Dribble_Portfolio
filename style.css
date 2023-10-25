@@ -32,7 +32,7 @@ header {
 .profile {
     justify-content: center;
     align-items: center;
-    max-width: 450px;
+    max-width: 500px;
     margin: 100px auto;
     text-align: center;
     color: aliceblue;
@@ -57,6 +57,8 @@ header {
 
 .profile h1 {
     margin: 25px auto 20px;
+    max-width: 350px;
+    padding: 0 8px;
 }
 
 button {
@@ -84,13 +86,20 @@ button {
     height: 150px;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    /* width: 100%; */
 }
 
 .brands div {
     width: 100px;
     height: 100px;
     margin: 0 40px;
+}
+
+.brands .brand3,
+.brands .p2,
+.brands .brand5,
+.brands .brand6 {
+    display: none;
 }
 
 .brands img {
@@ -108,18 +117,6 @@ button {
 
 .brands .brand1 img {
     width: 170px;
-}
-
-.brands .brand6 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: rgb(44, 43, 43);
-}
-
-.brands .brand6 img {
-    width: 160px;
-    height: fit-content;
 }
 
 .brands .brandp p {
@@ -143,12 +140,14 @@ button {
     color: aliceblue;
     text-align: center;
     margin: 80px auto 40px;
-    font-size: 2rem;
-    max-width: 550px;
+    font-size: 1.5rem;
+    max-width: 300px;
+    padding: 0 8px;
 }
 
 .collaboration .agencies {
     display: flex;
+    flex-wrap: wrap;
     margin: 0 auto;
     justify-content: center;
 }
@@ -162,7 +161,7 @@ button {
 
 .agencies div,
 .bx {
-    color: rgb(123, 120, 120);
+    color: rgb(174, 173, 173);
     background: rgb(44, 43, 43);
 }
 
@@ -179,6 +178,21 @@ button {
 }
 
 
+footer {
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+}
+
+footer h1 {
+    color: aliceblue;
+    text-align: center;
+    margin: 80px auto 40px;
+    font-size: 1.5rem;
+    max-width: 300px;
+    padding: 0 8px;
+}
 
 
 
@@ -193,7 +207,58 @@ button {
 
 
 
-/* Tablet size ............. */
+
+
+
+
+
+
+
+/* mobile size upwards ............. */
+
+@media (min-width:450px) {
+    
+    .profile h1 {
+        font-size: 2.7rem;
+        margin: 25px auto 20px;
+        max-width: none;
+    }
+    
+    .collaboration h1 {
+        color: aliceblue;
+        text-align: center;
+        margin: 150px auto 70px;
+        font-size: 2.7rem;
+        max-width: 820px;
+    }
+
+    .agencies .works {
+        padding: 120px 15px 20px;
+        margin: 10px;
+        width: 150px;
+    }
+
+    .agencies h6 {
+        font-size: 1rem;
+        margin: 6px 0 8px;
+    }
+    
+    .agencies p {
+        font-size: .8rem;
+        max-width: 130px;
+    }
+
+    footer h1 {
+        font-size: 2rem;
+    }
+
+}
+
+
+
+
+
+/* Tablet size upwards ............. */
 
 @media (min-width:768px) {
 
@@ -205,23 +270,35 @@ button {
         font-size: 3rem;
         margin: 25px auto 20px;
     }
-}
 
+    .brands .brand3,
+    .brands .p2,
+    .brands .brand5,
+    .brands .brand6 {
+        display: block;
+    }
 
+    .brands .brand6 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgb(44, 43, 43);
+    }
+    
+    .brands .brand6 img {
+        width: 160px;
+        height: fit-content;
+    }
 
+    
+    .collaboration {
+        margin: 20px auto;
+    }
+    
 
-
-
-/* Laptop size ............. */
-
-@media (min-width:450px) {
-
-    .profile h1 {
-        font-size: 3rem;
-        margin: 25px auto 20px;
+    footer {
+        display: none;
     }
 }
-
-
 
 
