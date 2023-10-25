@@ -175,13 +175,14 @@ button {
     background: rgb(44, 43, 43);
     font-size: .7rem;
     max-width: 100px;
+    line-height: 1rem;
 }
 
 
 footer {
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
+    margin: 20px auto 30px;
     text-align: center;
 }
 
