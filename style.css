@@ -160,12 +160,13 @@ button {
 }
 
 .agencies .works {
-    padding: 120px 10px 30px 15px;
+    padding: 120px 8px 20px;
     background: rgb(44, 43, 43);
     margin: 10px;
     width: 180px;
     border: 2px solid rgb(97, 98, 99);
     max-width: 150px;
+    min-width: 80px;
 }
 
 .agencies .work1,
@@ -181,13 +182,14 @@ button {
 
 .agencies h6 {
     background: rgb(44, 43, 43);
-    font-size: 1rem;
+    font-size: 1.1rem;
     margin: 9px 0 12px;
+    font-weight: 700px;
 }
 
 .agencies p {
     background: rgb(44, 43, 43);
-    font-size: .9rem;
+    font-size: 1rem;
     max-width: 150px;
     line-height: 1.3rem;
 }
