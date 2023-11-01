@@ -1,8 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400&family=Noto+Sans+JP:wght@100;300&display=swap");
+
 * {
     margin: 0;
     padding: 0;
     background: rgb(20, 20, 20);
-    font-family: monospace;
 }
 
 .container {
@@ -41,6 +42,7 @@ header {
 
 .profile .img {
     margin: 10px auto 15px;
+    width: 115px;
 }
 
 .profile .img img {
@@ -66,12 +68,13 @@ button {
     color: aliceblue;
     padding: 15px 35px;
     margin: 20px auto;
-    font-size: .9rem;
+    font-size: .87rem;
     word-spacing: .1rem;
     letter-spacing: .1rem;
     background: rgb(44, 43, 43);
     border: 2px solid rgb(97, 98, 99);
-    width: 170px;
+    width: 175px;
+    
 }
 
 
@@ -98,10 +101,10 @@ button {
     margin: 0 40px;
 }
 
-.brands .brand3,
-.brands .p2,
-.brands .brand5,
-.brands .brand6 {
+.brand3,
+.brand4,
+.brand5,
+.brand6 {
     display: none;
 }
 
@@ -151,7 +154,7 @@ button {
 
 .collaboration .agencies {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     margin: 0 auto;
     justify-content: center;
 }
@@ -162,6 +165,12 @@ button {
     margin: 10px;
     width: 180px;
     border: 2px solid rgb(97, 98, 99);
+    max-width: 150px;
+}
+
+.agencies .work1,
+.agencies .work2 {
+    display: none;
 }
 
 .agencies div,
@@ -242,10 +251,20 @@ footer h1 {
         max-width: 820px;
     }
 
+    .collaboration .agencies {
+        flex-wrap: wrap;
+    }
+
     .agencies .works {
         padding: 150px 5px 50px 18px;
         margin: 15px;
         width: 240px;
+        max-width: none;
+    }
+
+    .agencies .work1,
+    .agencies .work2 {
+        display: block;
     }
 
     .agencies h6 {
@@ -282,11 +301,12 @@ footer h1 {
         margin: 25px auto 20px;
     }
 
-    .brands .brand3,
-    .brands .p2,
-    .brands .brand5,
-    .brands .brand6 {
+    .brand3,
+    .brand4,
+    .brand5,
+    .brand6 {
         display: block;
+
     }
 
     .brands .brand6 {
@@ -294,11 +314,6 @@ footer h1 {
         justify-content: center;
         align-items: center;
         background: rgb(44, 43, 43);
-    }
-    
-    .brands .brand6 img {
-        width: 160px;
-        height: fit-content;
     }
 
     
